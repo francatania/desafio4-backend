@@ -1,0 +1,84 @@
+[
+	{
+		"id": 1,
+		"title": "Compu",
+		"description": "Nuevita",
+		"code": "has87",
+		"price": 2500,
+		"status": true,
+		"stock": 2,
+		"category": "PC",
+		"thumbnail": []
+	},
+	{
+		"id": 2,
+		"title": "Play 4",
+		"description": "Usada",
+		"code": "has7",
+		"price": 600,
+		"status": true,
+		"stock": 20,
+		"category": "Consolas",
+		"thumbnail": []
+	},
+	{
+		"id": 3,
+		"title": "Play 3",
+		"description": "Usada",
+		"code": "has71",
+		"price": 200,
+		"status": true,
+		"stock": 20,
+		"category": "Consolas",
+		"thumbnail": []
+	},
+	{
+		"id": 4,
+		"title": "Play 5",
+		"description": "Nueva",
+		"code": "has711235",
+		"price": 1800,
+		"status": true,
+		"stock": 20,
+		"category": "Consolas",
+		"thumbnail": []
+	},
+	{
+		"id": 5,
+		"title": "Notebook DELL",
+		"description": "Nueva",
+		"code": "has7asdas",
+		"price": 1200,
+		"status": true,
+		"stock": 20,
+		"category": "Notebook",
+		"thumbnail": []
+	},
+	{
+		"id": "8544bca1-1ff1-48f9-8ebe-4f28ab904937",
+		"title": "Probando1",
+		"description": "Prueba1",
+		"price": "90",
+		"thumbnail": [],
+		"code": "ashwyu1",
+		"stock": "20"
+	},
+	{
+		"id": "27bf6b70-0a74-4144-9071-556140a2e5f3",
+		"title": "Probando2",
+		"description": "prueba2",
+		"price": "801",
+		"thumbnail": [],
+		"code": "aaaaa111",
+		"stock": "80"
+	},
+	{
+		"id": "97c13feb-36fd-4c3c-8a3b-e17a5a76bcbf",
+		"title": "Probando3",
+		"description": "prueba3",
+		"price": "78",
+		"thumbnail": [],
+		"code": "1299aa",
+		"stock": "3"
+	}
+]

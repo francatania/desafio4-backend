@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    
+}
+
+.container-realtime{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 2rem;
+
+}
+
+/* #formulario-container{
+    
+} */

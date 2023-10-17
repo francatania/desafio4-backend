@@ -1,0 +1,35 @@
+<div class="container-realtime">
+
+    <div id="formulario-container">
+        <h2>Formulario para nuevo producto</h2>
+        <form action="" id="form">
+            <input type="text" id="form-title" placeholder="Nombre">
+            <input type="text" id="form-description" placeholder="Descripcion">
+            <input type="text" id="form-code" placeholder="Código">
+            <input type="number" id="form-price" placeholder="Precio">
+            <input type="number" id="form-stock" placeholder="Stock">
+            <input type="text" id="form-category" placeholder="Categoria">
+            <input type="submit" placeholder="Enviar" value="Cargar producto" id="form-submit" >
+        </form>
+    </div>
+    <div>
+        <div>
+            <h1>Listado de productos:</h1>
+        </div>
+        <div id="list-container"> 
+            {{#each body.products}}
+                <ul>
+                    <li>id: {{this.id}}</li>
+                    <li>Nombre producto: {{this.title}}</li>
+                    <li>Descripcion: {{this.description}}</li>
+                    <li>Codigo: {{this.code}}</li>
+                    <li>Precio: ${{this.price}}</li>
+                    <li>Stock: {{this.stock}}</li>
+                    <li>Categoria: {{this.category}}</li>
+                </ul>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js" ></script>
+<script src="/js/index.js" ></script>

@@ -55,30 +55,21 @@
 		"thumbnail": []
 	},
 	{
-		"id": "8544bca1-1ff1-48f9-8ebe-4f28ab904937",
-		"title": "Probando1",
-		"description": "Prueba1",
-		"price": "90",
+		"id": "926a3ec2-6afc-4a15-934c-a47339af97e4",
+		"title": "Joystick XBOX",
+		"description": "nuevo",
+		"price": "175",
 		"thumbnail": [],
-		"code": "ashwyu1",
+		"code": "1239asdaasda",
 		"stock": "20"
 	},
 	{
-		"id": "27bf6b70-0a74-4144-9071-556140a2e5f3",
-		"title": "Probando2",
-		"description": "prueba2",
-		"price": "801",
+		"id": "68ad8e8a-51a2-4d1d-bad9-0572c2cfdd27",
+		"title": "Joystick XBOX 2",
+		"description": "nuevo2",
+		"price": "175",
 		"thumbnail": [],
-		"code": "aaaaa111",
-		"stock": "80"
-	},
-	{
-		"id": "97c13feb-36fd-4c3c-8a3b-e17a5a76bcbf",
-		"title": "Probando3",
-		"description": "prueba3",
-		"price": "78",
-		"thumbnail": [],
-		"code": "1299aa",
-		"stock": "3"
+		"code": "13saasdas",
+		"stock": "20"
 	}
 ]

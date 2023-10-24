@@ -2,6 +2,8 @@
 (function (){
     const socket = io();
 
+    const listContainer = document.getElementById('list-container');
+
     const form = document.getElementById('form');
     const title = document.getElementById('form-title');
     const description = document.getElementById('form-description');
@@ -28,4 +30,22 @@
         socket.emit('new-product', body);
     })
 
+    socket.on('update-products', (data)=>{
+        console.log(data);
+        listContainer.innerText = '';
+        const productsHTML = data.map((p)=>{
+            return `
+                <ul>
+                    <li>id: ${p.id}</li>
+                    <li>Nombre producto: ${p.title}</li>
+                    <li>Descripcion: ${p.description}</li>
+                    <li>Codigo: ${p.code}</li>
+                    <li>Precio: $ ${p.price}</li>
+                    <li>Stock: ${p.stock}</li>
+                    <li>Categoria: ${p.category}</li>
+                </ul>
+            `
+        }).join('');
+        listContainer.innerHTML = productsHTML;
+    })
 })();

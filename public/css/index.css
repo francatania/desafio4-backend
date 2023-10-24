@@ -11,6 +11,13 @@
 
 }
 
-/* #formulario-container{
-    
-} */
+.real-time-container{
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+#list-container{
+    height: 30rem;
+    width: 100%;
+    overflow: scroll;
+}

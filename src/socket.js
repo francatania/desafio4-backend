@@ -17,7 +17,7 @@ export const init = (httpServer)=>{
         console.log(`Se ha conectado un nuevo cliente (${socketClient.id})`)
 
         socketClient.emit('start', async ()=>{
-          const products = await productManager.getProducts('products.json');
+          const products = await productManager.getProducts();
           return products;
         })
     
@@ -28,7 +28,7 @@ export const init = (httpServer)=>{
           }
     
           await productManager.addProduct(newProduct);
-          const products = await productManager.getProducts('products.json');
+          const products = await productManager.getProducts();
           socketClient.emit('update-products', products);
         })
 

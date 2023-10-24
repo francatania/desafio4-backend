@@ -19,21 +19,25 @@ export default class ProductManager{
             console.error("Se deben completar todos los campos.");
             return;
         }
-        
-        const products = await this.getProducts(this.path);
+        try {
+            const products = await this.getProducts(this.path);
 
-        let codeRepeated = products.some(p => p.code === code);
-
-
-        if(codeRepeated){
-            throw new Error(`El codigo ${code} ya existe.`);
+            let codeRepeated = products.some(p => p.code === code);
+    
+    
+            if(codeRepeated){
+                throw new Error(`El codigo ${code} ya existe.`);
+            }
+            else{
+                const users =  await getJSONFromFile(this.path);
+                const newUser = {id ,title, description, price, thumbnail, code, stock};
+                users.push(newUser);
+                return saveJSONToFile(this.path, users);
+            };
+        } catch (error) {
+            console.error(`Ha ocurrido un error: ${error.message}`);
         }
-        else{
-            const users =  await getJSONFromFile(this.path);
-            const newUser = {id ,title, description, price, thumbnail, code, stock};
-            users.push(newUser);
-            return saveJSONToFile(this.path, users);
-        };
+
     };
 
     getProducts(){ 

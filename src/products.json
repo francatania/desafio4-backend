@@ -71,5 +71,14 @@
 		"thumbnail": [],
 		"code": "13saasdas",
 		"stock": "20"
+	},
+	{
+		"id": "a0573dc2-bf6a-4bcf-8aa8-db431e2e54f2",
+		"title": "prueba-2",
+		"description": "prueba-22",
+		"price": "12",
+		"thumbnail": [],
+		"code": "13saa",
+		"stock": "12"
 	}
 ]

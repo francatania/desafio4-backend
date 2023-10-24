@@ -32,6 +32,16 @@ export const init = (httpServer)=>{
           socketClient.emit('update-products', products);
         })
 
+        socketClient.on('delete-product', async(id)=>{
+          // const products = await productManager.getProducts();
+          // const index = products.findIndex((p) => p.id == id);
+
+          // products.splice(index, 1);
+          await productManager.deleteProducts(id);
+          const products = await productManager.getProducts();
+          socketClient.emit('update-products', products);
+        })
+
         socketClient.on('disconnect', ()=>{
           console.log(`Se ha desconectado el cliente ${socketClient.id}`);
         })

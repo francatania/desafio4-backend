@@ -13,6 +13,9 @@
     const category = document.getElementById('form-category');
     // const submit = document.getElementById('form-submit');
 
+    const idDeleteForm = document.getElementById('form-delete');
+    const idDelete = document.getElementById('form-id-delete');
+
     const list = document.getElementById('list-container');
 
     form.addEventListener('submit', async (event)=>{
@@ -28,6 +31,12 @@
             thumbnail: []
         }
         socket.emit('new-product', body);
+    })
+
+    idDeleteForm.addEventListener('submit', async (event)=>{
+        event.preventDefault();
+        const id = idDelete.value;
+        socket.emit('delete-product', id);
     })
 
     socket.on('update-products', (data)=>{
